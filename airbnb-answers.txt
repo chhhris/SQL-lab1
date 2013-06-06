@@ -1,0 +1,16 @@
+Answers: 
+
+(Q1) Whose apartments are available on Airbnb?
+(A1) SELECT * FROM airbnb WHERE hometype_id = 1;
+
+(Q2) What kinds of home types are there?
+(A2) SELECT home FROM hometype;
+
+(Q3) If you're a single person looking for a private room in NYC, who should you contact?
+(A3) SELECT * FROM airbnb WHERE privacy_id=2 AND city='New York City';
+
+(Q4) Steven recently moved from the frat house he shared with 9 of his bros to a 4 bedroom apartment. Update his Airbnb profile to reflect the change.
+(A4) UPDATE airbnb SET home_id=1 AND accommodation=4 WHERE user='Steven'
+
+(Q5) What kind of dwelling is represented in the table by the 
+(A5) SELECT COUNT(*) FROM airbnb WHERE city="San Francisco";
